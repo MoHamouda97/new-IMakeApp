@@ -1,0 +1,32 @@
+@import './../../../../../assets/sass/helpers/vars';
+
+.our-clients{
+    background-image: url('./../../../../../assets/images/Group3.png');
+    background-size: 100% 100%;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    min-height: 750px;
+
+    .section-title{
+        color: $specialColor;
+        margin-bottom: 35px;
+    }
+
+    .slider-title{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .slider-text{
+        color: $textColor;
+        text-align: justify;
+        font-size: 18px;
+        direction: rtl;
+        font-weight: bold;
+    }
+
+    .slider-img{
+        width: 50px;
+    }
+}

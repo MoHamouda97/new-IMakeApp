@@ -1,0 +1,70 @@
+<section class="courses-content">
+    <div class="container">
+        <mat-tab-group mat-align-tabs="start">
+            <mat-tab label="التسويق">
+                <div class="row">
+                    <div class="col-md-4" *ngFor="let course of courses">
+                        <a href="#" matRipple style="display: inline-block; width: 100%; border-radius: 10px;">
+                            <div class="course-wrapper">
+                                <div class="course-image text-center">
+                                    <img [src]="course.img" [alt]="course.img" class="img-fluid w-100" />
+                                </div>
+                                <div class="course-title text-right">
+                                    <h5>{{course.title}}</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="الدعايا">
+                <div class="row">
+                    <div class="col-md-4" *ngFor="let course of courses">
+                        <a href="#" matRipple style="display: inline-block; width: 100%; border-radius: 10px;">
+                            <div class="course-wrapper">
+                                <div class="course-image text-center">
+                                    <img [src]="course.img" [alt]="course.img" class="img-fluid w-100" />
+                                </div>
+                                <div class="course-title text-right">
+                                    <h5>{{course.title}}</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>                
+            </mat-tab>
+            <mat-tab label="برمجة و تطوير">
+                <div class="row">
+                    <div class="col-md-4" *ngFor="let course of courses">
+                        <a href="#" matRipple style="display: inline-block; width: 100%; border-radius: 10px;">
+                            <div class="course-wrapper">
+                                <div class="course-image text-center">
+                                    <img [src]="course.img" [alt]="course.img" class="img-fluid w-100" />
+                                </div>
+                                <div class="course-title text-right">
+                                    <h5>{{course.title}}</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="اعمال">
+                <div class="row">
+                    <div class="col-md-4" *ngFor="let course of courses">
+                        <a href="#" matRipple style="display: inline-block; width: 100%; border-radius: 10px;">
+                            <div class="course-wrapper">
+                                <div class="course-image text-center">
+                                    <img [src]="course.img" [alt]="course.img" class="img-fluid w-100" />
+                                </div>
+                                <div class="course-title text-right">
+                                    <h5>{{course.title}}</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="direction: ltr;">
+    <div class="container-fluid">
+          <a class="navbar-brand" href="#" matRipple>
+              <img *ngIf="navType == 'home'" src="./../../../../../assets/images/logo.png" alt="logo" />
+              <img 
+                *ngIf="navType == 'about' || navType == 'courses' || navType == 'pricing'" 
+                src="./../../../../../assets/images/Group9.png" 
+                alt="logo" 
+                width="200px" />
+          </a>
+          <button matRipple class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div 
+            class="collapse navbar-collapse" 
+            id="navbarSupportedContent" 
+            style="direction: rtl;">
+            <ul 
+              class="navbar-nav ml-auto text-right"
+              [class.white-color]="navType == 'home'"
+              [class.black-color]="navType == 'about'">
+              <li matRipple class="nav-item active">
+                <a class="nav-link" routerLink="/">الرئيسية</a>
+              </li>
+              <li matRipple class="nav-item">
+                <a class="nav-link" routerLink="/pricing">الباقات</a>
+              </li>
+              <li matRipple class="nav-item dropdown">
+                  <a class="nav-link" href="#">المميزات</a>
+              </li>
+              <li matRipple class="nav-item dropdown">
+                <a class="nav-link" routerLink="/courses">دورات تدريبية</a>
+              </li>              
+              <li matRipple class="nav-item dropdown">
+                  <a class="nav-link cta-btn" href="#">انشئ متجرك</a>
+              </li>        
+            </ul>
+          </div>          
+    </div>   
+  </nav>

@@ -1,0 +1,97 @@
+@import './../../../../assets/sass/helpers/vars';
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(70deg, #b06ab3 0%, #3e2784 100%);
+    position: relative;
+
+    .container {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        .cta-box{
+            color: #fff;
+    
+            .main-titles{
+                font-size: 25px;
+                color: #fff;
+                font-weight: bold;
+                display: inline-block;
+            }
+    
+            p{
+                font-weight: 400;
+                margin: 15px 0 25px;
+            }
+    
+            .cta-btn{
+                border-radius: 20px;
+                animation: shadow-pulse 1.8s infinite cubic-bezier(0.66, 0, 0, 1);
+                margin: auto;
+            }
+        }        
+    }
+
+    .shape{
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        line-height: 0;
+        direction: ltr;
+        bottom: -54px;
+        transform: rotate(359deg);
+        right: 0;
+        top: 92vh;
+        background-color: #fff;
+        border-radius: 41%;
+    }
+}
+
+@keyframes shadow-pulse{
+    0% {
+        box-shadow: 0 0 0 0 $mainColor;
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 987px) {
+    .header{
+        .container{
+            position: static;
+            transform: translate(0, 0);
+            margin-top: 70px;
+
+            .cta-box{
+                .main-titles{font-size: 20px;}
+            }
+
+            img{
+                height: 300px !important;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .header{
+        .container{
+            margin-top: 0px;
+
+            .cta-box{
+                .main-titles{font-size: 15px;}
+            }
+
+            img{
+                height: 200px !important;
+                margin-top: 40px;
+            }
+        }
+    }
+}

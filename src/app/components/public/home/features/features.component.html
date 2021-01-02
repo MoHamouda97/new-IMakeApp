@@ -1,0 +1,18 @@
+<section class="how-it-works">
+    <div class="container">
+        <h2 class="section-title">اهم مميزاتنا</h2>
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3" *ngFor="let feature of features">
+                <div class="feature-box">
+                    <div class="img">
+                        <img [src]="feature.img" alt="img" />
+                    </div>
+                    <div class="text">
+                        <p>{{feature.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

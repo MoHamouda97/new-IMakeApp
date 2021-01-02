@@ -1,0 +1,53 @@
+@import './../../../../assets/sass/helpers/vars';
+
+.main-footer{
+    //background-image: url('./../../../../assets/images/Group3.png');
+    .section-title{
+        color: $specialColor;
+        margin-bottom: 25px;
+    }
+    
+    ul{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+        li{
+            display: inline-block;
+            padding: 5px;
+            border-radius: 10px;
+            
+            a{
+                color: #000;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .contact-image{
+        background-image: url('./../../../../assets/images/Group7.png');
+        height: 535px;
+        background-size: cover;
+        width: 50%;
+    }
+}
+
+.default-footer{
+    background-image: url('./../../../../assets/images/footer-background.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.home-footer{
+    background-image: url('./../../../../assets/images/Group6.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% 65%;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-image{
+        width: 100% !important;
+        height: 300px !important;
+    }
+}

@@ -1,0 +1,20 @@
+<section class="how-it-works">
+    <div class="container-fluid">
+        <h2 class="section-title" style="position: relative;">كيف تعمل IMakeApp</h2>
+
+        <div class="slider" style="direction: ltr;">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let slide of slides">
+                    <div class="how-box">
+                        <div class="image">
+                            <img [src]="slide.img" alt="img" />
+                        </div>
+                        <div class="text">
+                            <p class="text-center">{{slide.text}}</p>
+                        </div>
+                    </div>
+                </ng-template>                   
+            </owl-carousel-o>             
+        </div>
+    </div>
+</section>

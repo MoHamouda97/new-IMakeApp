@@ -1,0 +1,28 @@
+<section class="our-clients">
+    <div class="container" style="padding-top: 50px; direction: ltr;">
+        <div class="row align-center">
+            <div class="col-md-6">
+                <img src="./../../../../../assets/images/portfolio.png" alt="portfolio" />
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-title text-right">عملاء تشرفنا بخدمتهم</h2>
+
+                <div class="slider" style="direction: ltr;">
+                    <owl-carousel-o [options]="customOptions">
+                        <ng-template carouselSlide *ngFor="let slide of slides">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h4 class="slider-title text-right">{{slide.title}}</h4>
+                                    <p class="slider-text">{{slide.text}}</p>
+                                </div>
+                                <div class="col-3">
+                                    <img [src]="slide.img" class="slider-img" alt="logo" />
+                                </div>                                
+                            </div>
+                        </ng-template>                   
+                    </owl-carousel-o>             
+                </div>
+            </div>            
+        </div>
+    </div>         
+</section>

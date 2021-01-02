@@ -1,0 +1,57 @@
+<footer 
+    class="main-footer" 
+    [class.home-footer]="footerType == 'home'"
+    [class.default-footer]="footerType == 'about'">
+    <div class="contact-image" *ngIf="footerType == 'home'"></div>
+    
+    <div class="container-fluid" style="padding-top: 50px;">
+        <div class="row align-center">
+            <div class="col-md-6 text-center">
+                <img src="./../../../../assets/images/Group9.png" alt="logo" />
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-title text-center">تجدنا بقربك في اي وقت</h2>
+                <ul class="list-unstyled">
+                    <li matRipple>
+                        <a href="#" target="_blank">
+                            <img src="./../../../../assets/images/Bitmap.png" alt="social" />
+                        </a>
+                    </li>
+                    <li matRipple>
+                        <a href="#" target="_blank">
+                            <img src="./../../../../assets/images/Bitmap2.png" alt="social" />
+                        </a>
+                    </li>
+                    <li matRipple>
+                        <a href="#" target="_blank">
+                            <img src="./../../../../assets/images/whats.png" alt="social" />
+                        </a>
+                    </li>                                        
+                </ul> 
+                <ul class="list-unstyled">
+                    <li matRipple>
+                        <a href="#" target="_blank">
+                            الاسئلة الشائعة -
+                        </a>
+                    </li>
+                    <li matRipple>
+                        <a href="#" target="_blank">
+                            سياسة الشركة -
+                        </a>
+                    </li>
+                    <li matRipple>
+                        <a routerLink="/about">
+                            من نحن
+                        </a>
+                    </li>                                        
+                </ul>                               
+            </div>  
+
+            <div class="col-md-12">
+                <p class="text-center" style="color: #000; font-weight: bold; padding-top: 50px;">
+                    جميع الحقوق محفوظة لشركة IMakeApp
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

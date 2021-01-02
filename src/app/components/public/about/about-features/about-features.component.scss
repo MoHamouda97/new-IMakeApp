@@ -1,0 +1,30 @@
+@import './../../../../../assets/sass/helpers/vars';
+
+.about-features{
+    margin-top: 80px;
+    background-image: url('./../../../../../assets/images/feature-background.png');
+    min-height: 795px;
+    background-size: cover;
+    background-position: bottom;
+    h3{
+        color: $specialColor;
+        margin-bottom: 25px;
+        font-weight: bold;
+    }
+
+    p{
+        text-align: justify;
+        font-weight: bold;
+        color: #000;
+        font-size: 17px;
+        margin-right: 20px;
+    }    
+}
+
+@media only screen and (max-width: 768px) {
+    .about-features{
+        .row{
+            min-height: 545px !important;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import './../../../../../assets/sass/helpers/vars';
+
+.pricing-header{
+    background-image: url('./../../../../../assets/images/Oval3.png');
+    background-size: 655px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 655px;
+
+    .course-box{
+        h3{
+            color: $specialColor;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        p{
+            text-align: justify;
+            font-weight: bold;
+            color: #000;
+            width: 45%;
+            font-size: 17px;
+        }       
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pricing-header{
+        background-size: 500px;
+    }
+}

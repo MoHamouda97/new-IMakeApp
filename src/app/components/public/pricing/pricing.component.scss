@@ -1,0 +1,109 @@
+.pricing{
+    .title-wrapper{
+        margin-bottom: 80px;
+        .section-title{
+            position: relative;
+            display: inline-block;
+    
+            &::after{
+                position: absolute;
+                top: 12px;
+                margin-right: 80px;
+                right: 100%;
+                width: 54px;
+                content: url('./../../../../assets/images/header-bg-right.svg');
+            }
+    
+            &::before{
+                position: absolute;
+                top: 12px;
+                margin-left: 80px;
+                left: 100%;
+                width: 54px;
+                content: url('./../../../../assets/images/header-bg-right.svg');
+            }        
+        }
+    }
+
+    .table-wrapper{
+        border-radius: 10px;
+        overflow: hidden;
+        border-bottom: 1px solid #ebeef1;
+
+        .table-main{
+            .p-table{
+                display: table;
+                width: 100%;
+                color: #2b2d34;
+                font-size: 16px;
+                font-weight: 500;
+                background-color: #f2f4f6;
+
+                .p-cell{
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 25%;
+                    padding: 15px 25px;
+                    text-align: center;
+                    border-right: 1px solid #ebeef1;
+
+                    .fa-check-circle{
+                        color: #8fd049;
+                        font-size: 22px;
+                    }
+
+                    .fa-times-circle{
+                        color: #ff6767;
+                        font-size: 22px;
+                    }
+                }
+
+                .p-bold{
+                    color: #2b2d34;
+                    font-weight: 900;
+                    font-size: 18px;
+                }
+
+                .p-package{
+                    span{
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 900;
+
+                        &.small{
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: #888b98;
+                            margin-top: 8px;
+                        }
+                    }
+                } 
+
+                .basic{
+                    color: #ff9e01;
+                }
+
+                .plus{
+                    color: #2ac5b0;
+                }
+
+                .pro{
+                    color: #9381f1;
+                }
+            }
+
+            .bg-color{
+                background: #f9fafb;
+            }
+        }
+        
+        .p-header{
+            text-align: center;
+            padding: 15px 0;
+            background: #f2f4f6;
+            color: #2b2d34;
+            font-size: 18px;
+            font-weight: 900;
+        }
+    }
+}
